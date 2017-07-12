@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "CircleCI",
+  "description": "Modify CircleCI views",
+  "version": "1.0",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+
+  "content_scripts": [{
+    "js": ["jquery-3.2.1.min.js", "content.js"],
+    "css": ["content.css"],
+    "matches": ["https://circleci.com/gh/*/*/*"],
+    "run_at": "document_end"
+  }]
+}

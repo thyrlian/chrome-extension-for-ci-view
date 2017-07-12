@@ -1,0 +1,14 @@
+#newLogContainer.inner pre.output {
+  display: inline-table;
+}
+
+#newLogContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #212121;
+  z-index: 999999999;
+  overflow-x: scroll;
+}
